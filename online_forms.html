@@ -13,19 +13,42 @@
     <main>
       <section id="contact-form">
         <h2> Place Order </h2>
-          <form method="GET" action="place-order.php">
-            <h4> Address </h4>
-              <input name="address1" placeholder="Address Line 1" class="lg-input" /> <br />
-              <input name="address2" placeholder="Address Line 2" class="lg-input" /> <br />
+        <form method="GET" action="place-order.php">
+          <h4> Delivery </h4>
+          <input name="delivery" type="radio" value="delivery" /> Delivery <br />
+          <input name="delivery" type="radio" value="pick-up" /> Pick-up
 
-              <input name="city" placeholder="City" class="sm-input" />
-              <input name="state" placeholder="State" class="sm-input" /> <br />
-              <input name="zip" placeholder="Zip Code" class="sm-input" />
-              <br />
+          <h4> Address </h4>
+          <input name="address1" placeholder="Address Line 1" class="lg-input" /> <br />
+          <input name="address2" placeholder="Address Line 2" class="lg-input" /> <br />
 
+          <input name="city" placeholder="City" class="sm-input" />
+          <input name="state" placeholder="State" class="sm-input" /> <br />
+          <input name="zip" placeholder="Zip Code" class="sm-input" />
+          <br />
+          <br />
 
+          <h4> Size </h4>
+          <select name="size">
+            <option value="small"> Small - $10.50 </option>
+            <option value="medium"> Medium - $12.00 </option>
+            <option value="large"> Large - $13.50 </option>
+            <option value="extra large"> Extra large - $15.00 </option>
+          </select>
+          <br />
+          <br />
 
-          </form>
+          <h4> Classiche: <h4>
+          <input name="ingredient" type="checkbox" value="pomodoro" /> Pomodoro<br />
+          <input name="ingredient" type="checkbox" value="basilico" />  Basilico <br />
+          <input name="ingredient" type="checkbox" value="mozzarella" /> Mozzarella <br />
+          <input name="ingredient" type="checkbox" value="gorgonzola" /> Gorgonzola <br />
+          <input name="ingredient" type="checkbox" value="tonno" />  Tonno <br />
+          <input name="ingredient " type="checkbox" value="prosciutto" /> Prosciutto <br />
+          <br />
+
+          <button type="submit"> Place Order </button>
+        </form>
         </section>
 
     </main>
