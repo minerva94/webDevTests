@@ -13,7 +13,18 @@ body h1 {
 
 #main-header {
     border-bottom: 2px solid #000;
+    width:100%;
+    top:0px;
 }
+
+/*#main-header:before {*/
+/*    content: "";*/
+/*    display: block;*/
+/*    width:10px;*/
+/*    height:40px;*/
+/*    background:#000;*/
+/*    position: absolute;*/
+/*}*/
 
 #top-stories {
     width: 800px;
@@ -21,8 +32,17 @@ body h1 {
 }
 
 article {
-    max-width: 33%;
+    width: 220px;
     display: inline-block;
+    border: 1px solid #000;
+    padding: 10px;
+    box-shadow: 2px 2px 10px -1px rgba(0,0,0,.3);
+    transition: box-shadow 500ms; background: 5s;
+}
+
+article:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,.7);
+    background: #aaa;
 }
 
 article img {
@@ -35,4 +55,25 @@ article img {
     width:100%;
     background-size: cover !important;
     background-position: center !important;
+}
+
+a:hover{
+    color: #28a2d6;
+}
+
+.my-input {
+    display:block;
+    width: 95%;
+    margin:10px;
+    padding: 10px 20px;
+}
+
+.my-input:focus{
+    background: #a4d6cb;
+    color: #032329;
+    outline:none;
+}
+
+article:active{
+    opacity: 0.4;
 }
