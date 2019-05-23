@@ -61,11 +61,12 @@ a:hover{
     color: #28a2d6;
 }
 
-.my-input {
+.my-input, .my-textarea {
     display:block;
     width: 95%;
     margin:10px;
     padding: 10px 20px;
+    resize:none;
 }
 
 .my-input:focus{
@@ -76,4 +77,12 @@ a:hover{
 
 article:active{
     opacity: 0.4;
+}
+
+#go-button{
+    margin:10px;
+}
+
+#text{
+    margin: 10px;
 }
